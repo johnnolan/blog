@@ -32,10 +32,10 @@ a overview of topics I will be covering. As I publish them I will link to them b
 
 ## Leadership and Coaching
 
-* What it means to be a leader
+* What it means to be a leader and not a manager. You don't have to have leader in your job title to be one.
 * High I!
 * We not Me
-* Beneath the cheese of Leadership principles. how to do a british high five
+* Beneath the cheese of Leadership principles. How to do a british high five
 * Employ people who are better than you. Always. Then give them room.
 * Tribal Gatherings and Squads, the mini startup culture
 * Reading people and being the last to speak
