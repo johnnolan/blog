@@ -29,6 +29,7 @@ a overview of topics I will be covering. As I publish them I will link to them b
 * Javascript Hooks and component based JS
 * CSS Component Design
 * CSS Components and Sketch - Mixing UX with Front End Development, a beautiful relationship
+* Serverless - rapid AWS Lambda functions and more
 
 ## Leadership and Coaching
 
