@@ -10,6 +10,8 @@ categories: ideas
 Over the coming year I plan to publish walk throughs to setting up technologies for front end development. Below is
 a overview of topics I will be covering. As I publish them I will link to them below.
 
+## Front End Development
+
 * Living Style Guides
 * AWS CodeDeploy
 * AWS CodePipeline and Git
@@ -27,3 +29,16 @@ a overview of topics I will be covering. As I publish them I will link to them b
 * Javascript Hooks and component based JS
 * CSS Component Design
 * CSS Components and Sketch - Mixing UX with Front End Development, a beautiful relationship
+
+## Leadership and Coaching
+
+* What it means to be a leader
+* High I!
+* We not Me
+* Beneath the cheese of Leadership principles. how to do a british high five
+* Employ people who are better than you. Always. Then give them room.
+* Tribal Gatherings and Squads, the mini startup culture
+* Reading people and being the last to speak
+* How to connect with introverts
+* Work/Life balance
+* Benefits and a proper wage. If you remove financial worry then focus is 100%
