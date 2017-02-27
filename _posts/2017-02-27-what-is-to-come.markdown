@@ -22,6 +22,7 @@ a overview of topics I will be covering. As I publish them I will link to them b
 * CSS Optimisations - Deferred CSS Loading
 * CSS Optimisations - CSS Stats and statsd
 * CSS Optimisations - Accessibility
+* Linting
 * BEM - why?
 * Javascript Hooks and component based JS
 * CSS Component Design
