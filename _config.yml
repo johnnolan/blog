@@ -6,12 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Random thoughts on leadership - John Nolan
+title: Adventures in Front End Development and Leadership/Coaching
 email: johnnolan@nolanscafe.co.uk
 description: > # this means to ignore newlines until "baseurl:"
-  Trials and tribulations of running your own development team, 
-  dealing with conflict, personalities and politics in the workplace.
-  Plus how I find treating people gets the best from them.
+  I aim to record my successes and mistakes here so that others
+  may learn from them.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://johnnolan.github.io" # the base hostname & protocol for your site
 github_username:  johnnolan
