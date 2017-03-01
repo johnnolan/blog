@@ -1,5 +1,5 @@
 {
-  "name": "johnnolan.github.io",
+  "name": "blog",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnnolan/johnnolan.github.io.git"
+    "url": "git+https://github.com/johnnolan/blog"
   },
   "author": "John Nolan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/johnnolan/johnnolan.github.io/issues"
+    "url": "https://github.com/johnnolan/blog/issues"
   },
-  "homepage": "https://github.com/johnnolan/johnnolan.github.io#readme",
+  "homepage": "https://github.com/johnnolan/blog#readme",
   "devDependencies": {
     "serverless-blog": "file:./serverless-blog"
   }
