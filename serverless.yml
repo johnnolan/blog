@@ -43,7 +43,8 @@ resources:
       Properties:
         DistributionConfig:
           Origins:
-            - DomainName: ${self:custom.s3Bucket}.s3.amazonaws.com
+            #- DomainName: ${self:custom.s3Bucket}.s3.amazonaws.com
+            - DomainName: www.nolanscafe.co.uk
               ## An identifier for the origin which must be unique within the distribution
               Id: WebApp
               CustomOriginConfig:
