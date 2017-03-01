@@ -17,3 +17,5 @@ github_username:  johnnolan
 
 # Build settings
 markdown: kramdown
+sass:
+  style: compressed
