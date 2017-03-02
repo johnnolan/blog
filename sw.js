@@ -1,5 +1,6 @@
-// Version 0.1
-const ver = 2;
+---
+---
+const ver = {{ site.version }};
 
 self.addEventListener('install', e => {
 	e.waitUntil(

@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/johnnolan/blog/issues"
   },
-  "homepage": "https://github.com/johnnolan/blog#readme",
-  "devDependencies": {
-    "serverless-blog": "file:./serverless-blog"
-  }
+  "homepage": "https://github.com/johnnolan/blog#readme"
 }
