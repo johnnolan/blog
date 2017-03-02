@@ -9,4 +9,8 @@ before_script:
 # the `install` step will run `bundle install` by default.
 script: ./script/cibuild
 
+branches:
+  only:
+  - master
+
 sudo: false # route your build to the container-based infrastructure for a faster build
