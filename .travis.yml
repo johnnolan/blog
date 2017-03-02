@@ -12,9 +12,11 @@ deploy:
   provider: s3
   access_key_id: AWS_ACCESS_KEY
   secret_access_key: AWS_SECRET_KEY
-  bucket: arn:aws:s3:::www.nolanscafe.co.uk
+  bucket: www.nolanscafe.co.uk
   skip_cleanup: true
   local_dir: _site
+  region: eu-west-1
+  acl: public_read
 env:
   matrix:
   - secure: Wn5P+ojk/1lGyiPpCcjuGmkM560LZMopjHFm1NC8JTHW0qrfp8U3jQXKyz3ihK+RsJKuFE5QR9O9DOu8/tXop07s0SNjkDCCY1AyGNwDTIqe9RkZp9cD+eKrOEXyO8QQ6szHvYeTeFHXVCi3InaQ1eCDGtmHU3A28qVxWI2u3hKMYlOjRA7vr8TMHlhEzG1nTNMuR/9znsLQFuHD9yDTr3kPxAavef+qLZ0GUd0P4ddwt/5uHW81KAZ4yCyfid6v3C0GpUnc8i2oFg4GxRrV8gNcnEmFfgdmPuNIRQ1ErOEqZZo/gCDmTI47FbIUQJc0mHHNmO5m+sxr13VtVqHbUrRNomDtMHSj+4jeWvOY0CLH2kMeRD3ulwsVaZ9WKwpTDkXZ+95B7O+2NdGcxEvRshIL2HUh23QfUTmOIaa3Z8FY84rdgjxcoTOxeSRlcsAHGnkS4zQ+A7O0Hy0Bl2jCeMh/THC0sHxaoQoJ5/aUYBM12wEDkRvKDr/Rj309UWsZiUuIo9k4Uv5rxPiG652mAYI1wKYomYzi13luYEAFTTl0uHR1QoVdPie91NPAZo6ez1XuCXRteFWLOAn5JO1L2RQAljm0vxx6JGw7Q4z8hA70wPx2PMwv6PIZMQbD2pSOIskZ2dFc96tHeMuOO76VtOJG8ywcMKFntLiniavkNZc=
