@@ -1,6 +1,7 @@
 ---
 ---
 const ver = {{ site.version }};
+var staticCacheName = "johnnolan-blog-" + ver;
 
 self.addEventListener('install', e => {
 	e.waitUntil(
