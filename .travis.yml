@@ -1,7 +1,6 @@
 language: ruby
 dist: trusty
 sudo: required
-install: pip install awscli
 rvm:
 - 2.3.3
 before_script:

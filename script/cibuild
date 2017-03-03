@@ -1,3 +1,4 @@
 jekyll build
+pip install awscli
 aws configure set preview.cloudfront true
 aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths '/*'
