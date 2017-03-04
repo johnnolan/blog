@@ -7,8 +7,12 @@ self.addEventListener('install', e => {
 	e.waitUntil(
 	caches.open('johnnolan-blog-' + ver).then(cache => {
 		return cache.addAll([
-			'/ideas/2017/02/27/what-is-to-come.html',
-			'/'
+			{% for page in site.html_pages %}
+			'{{ page.url }}',
+			{% endfor %}
+			{% for post in site.posts %}
+			'{{ post.url }}',
+			{% endfor %}
 		])
 			.then(() => self.skipWaiting());
 })
@@ -23,7 +27,7 @@ self.addEventListener("activate", function(e){
 					return cacheName.startsWith("johnnolan-blog-")
 						&& cacheName != staticCacheName;
 				}).map(function(cacheName){
-					return cache.delete(cacheName);
+					return caches.delete(cacheName);
 				})
 			)
 		})
