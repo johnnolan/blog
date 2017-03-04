@@ -5,9 +5,7 @@ date:   2017-02-27 20:00:38 +0000
 categories: ideas
 ---
 
-# What is to come
-
-Over the coming year I plan to publish walk throughs to setting up technologies for front end development. Below is
+> Over the coming year I plan to publish walk throughs to setting up technologies for front end development. Below is
 a overview of topics I will be covering. As I publish them I will link to them below.
 
 ## Front End Development

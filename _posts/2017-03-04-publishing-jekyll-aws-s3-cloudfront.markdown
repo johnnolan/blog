@@ -6,8 +6,6 @@ date:   2017-03-03 20:00:38 +0000
 categories: ideas
 ---
 
-# Publishing your Jekyll blog to AWS S3 and Cloudfront invalidation using Travis CI
-
 > This information is useful once you have signed up to
  [https://travis-ci.org](https://travis-ci.org) via
  [https://github.com](https://github.com) and you have an existing
