@@ -17,6 +17,8 @@ canonical_baseurl: "/amp" # the subpath of your site, e.g. /blog
 url: "https://www.nolanscafe.co.uk" # the base hostname & protocol for your site
 github_username:  johnnolan
 
+exclude:   [nodemodules, script, Gemfile, npm-debug.log, browserconfig.xml, package.json]
+
 # Build settings
 markdown: kramdown
 sass:

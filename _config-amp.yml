@@ -24,3 +24,11 @@ sass:
 
 destination:   _site/amp
 layouts_dir:   ./_layouts-amp
+exclude:   [nodemodules, script, Gemfile, npm-debug.log, sw.js, browserconfig.xml, package.json, favicon.ico]
+
+defaults:
+  -
+    scope:
+      path: "_posts"
+    values:
+      layout: "default"

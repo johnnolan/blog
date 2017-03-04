@@ -19,13 +19,13 @@ First create a new directory called *script* in your root folder and
 create a file called *cibuild*. Now past the following details
  replacing *www.nolanscafe.co.uk* with your S3 bucket name.
 
-{% highlight JavaScript linenos %}
+```
 jekyll build
 pip install awscli
 aws s3 sync --acl public-read --sse --delete _site s3://www.nolanscafe.co.uk
 aws configure set preview.cloudfront true
 aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths '/*'
-{% endhighlight %}
+```
 
 This is going to do the following
 
@@ -46,7 +46,7 @@ cache to be invalidated so please be patient.
 Now create a ```.travis.yml``` file in the root for your directory with the
 following contents.
 
-{% highlight JavaScript linenos %}
+```
 language: ruby
 dist: trusty
 sudo: required
@@ -58,7 +58,7 @@ script: "./script/cibuild"
 branches:
   only:
   - master
-{% endhighlight %}
+```
 
 This is our deployment file. This tells Travis what we want to do once
 it has hold of our files from Git.
@@ -86,10 +86,10 @@ Here add your AWS Access Key, AWS Secret Key, S3 Bucket Region
 
 It is important to name these exactly like so
 
-* AWS_ACCESS_KEY_ID
-* AWS_DEFAULT_REGION
-* AWS_SECRET_ACCESS_KEY
-* CLOUDFRONT_DISTRIBUTION_ID
+* ```AWS_ACCESS_KEY_ID```
+* ```AWS_DEFAULT_REGION```
+* ```AWS_SECRET_ACCESS_KEY```
+* ```CLOUDFRONT_DISTRIBUTION_ID```
 
 These keys are stored as Environmental Variables that can be accessed in
 your Travis build script and are all encrypted.
