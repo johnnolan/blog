@@ -14,12 +14,11 @@ self.addEventListener('install', e => {
 			'{{ post.url }}',
 			{% endfor %}
 
-			{% for page in site.html_pages %}
-			'{{ page.url | prepend: site.canonical_baseurl }}',
-			{% endfor %}
 			{% for post in site.posts %}
 			'{{ post.url | prepend: site.canonical_baseurl }}',
 			{% endfor %}
+
+			'/amp/index.html'
 		])
 			.then(() => self.skipWaiting());
 })
