@@ -1,4 +1,4 @@
-jekyll build
+npm run build
 pip install awscli
 aws s3 sync --acl public-read --sse --delete _site s3://www.nolanscafe.co.uk
 aws configure set preview.cloudfront true

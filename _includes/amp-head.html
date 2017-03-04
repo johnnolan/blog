@@ -1,0 +1,76 @@
+<head>
+  <meta charset="utf-8">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="og:description" content="{{ page.description }}">
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.canonical_baseurl | prepend: site.url }}" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  {% if page.date %}
+  <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "blogPost",
+        "headline": {% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %},
+        "datePublished": {{ page.date }},
+        "image": [
+          "/android-chrome-512x512.png"
+        ]
+      }
+    </script>
+  {% endif %}
+  <style amp-custom>
+    body {
+      color: #000;
+      font-family: "Roboto",sans-serif;
+    }
+    .wrapper {
+      max-width: -webkit-calc(800px - (30px * 2));
+      max-width: calc(800px - (30px * 2));
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+    a {
+      color: #1573ca;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .site-header {
+      background-color: #1573ca;
+      min-height: 80px;
+      position: relative;
+    }
+    .site-title {
+      font-size: 26px;
+      color: #fff;
+      line-height: 74px;
+      letter-spacing: -1px;
+      margin-bottom: 0;
+      float: left;
+    }
+    .site-title:hover {
+      text-decoration: none;
+    }
+    .highlighter-rouge .highlight {
+      background: #eef;
+    }
+    pre {
+      padding: 8px 12px;
+      overflow-x: auto;
+    }
+    pre, code {
+      font-size: 15px;
+      border-radius: 3px;
+      background-color: #eef;
+    }
+  </style>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+</head>
+

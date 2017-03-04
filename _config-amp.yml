@@ -12,14 +12,23 @@ email: johnnolan@nolanscafe.co.uk
 description: > # this means to ignore newlines until "baseurl:"
   I aim to record my successes and mistakes here so that others
   may learn from them.
-baseurl: "" # the subpath of your site, e.g. /blog
-canonical_baseurl: "/amp" # the subpath of your site, e.g. /blog
+baseurl: "/amp" # the subpath of your site, e.g. /blog
+canonical_baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.nolanscafe.co.uk" # the base hostname & protocol for your site
 github_username:  johnnolan
-
-exclude:   [nodemodules, script, Gemfile, npm-debug.log, browserconfig.xml, package.json]
 
 # Build settings
 markdown: kramdown
 sass:
   style: compressed
+
+destination:   _site/amp
+layouts_dir:   ./_layouts-amp
+exclude:   [nodemodules, script, Gemfile, npm-debug.log, sw.js, browserconfig.xml, package.json, favicon.ico]
+
+defaults:
+  -
+    scope:
+      path: "_posts"
+    values:
+      layout: "default"
