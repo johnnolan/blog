@@ -2,7 +2,7 @@
 layout: post
 title:  "Setting up Jekyll for AMP"
 date:   2017-03-05 09:00:00 +0000
-categories: amp, jekyll
+categories: ideas
 author: "John Nolan"
 publisher: "John Nolan"
 ---
@@ -80,10 +80,11 @@ be easily processed. This means we need to make the following changes
 In our default.html change it to
 
 ```
+{% raw  %}
 <!doctype html>
 <html amp lang="en">
 
-  {% include amp-head.html %}
+	{% include amp-head.html %}
 
 <body>
 
@@ -97,10 +98,11 @@ In our default.html change it to
   {{ content }}
 </div>
 
-{% include amp-footer.html %}
+	{% include amp-footer.html %}
 
 </body>
 </html>
+{% endraw  %}
 ```
 
 Notice we have in our html declaration ```amp```. This is an example
@@ -119,7 +121,9 @@ amp-head.html. We need to create these two files in our
 folder. There content will look like so
 
 amp-head.html
+
 ```
+{% raw  %}
 <head>
   <meta charset="utf-8">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
@@ -201,6 +205,7 @@ amp-head.html
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
 </head>
+{% endraw  %}
 ```
 
 With AMP you should include all your CSS inline. It also needs to be as small as possible and be wrapped in a new special
@@ -214,7 +219,9 @@ to allow AMP sites to work.
 
 
 amp-footer.html
+
 ```
+{% raw  %}
 <footer class="site-footer">
 
   <div class="wrapper">
@@ -268,6 +275,7 @@ amp-footer.html
   </script>
 
 </amp-analytics>
+{% endraw  %}
 ```
 
 The only changes on here are the addition of the amp-analytics and
@@ -285,7 +293,7 @@ site in our /amp sub folder.
 
 ## Setting up canonical and amphtml meta tags
 
-```<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.canonical_baseurl | prepend: site.url }}" />```
+```{% raw  %}<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.canonical_baseurl | prepend: site.url }}" />{% endraw  %}```
 This line specifies the link back to our full html page. It is required to allow the user/browser easy access back
 to the full page.
 
@@ -301,11 +309,13 @@ And in your _config-amp.yml add the following line
 Now in your head.html add the following code
 
 ```
+{% raw  %}
 {% if page.url == '/amp/' %}}
 <link rel="amphtml" href="{{ page.url | prepend: site.canonical_baseurl | prepend: site.url | append: 'index.html' }}" />
 {% else %}
 <link rel="amphtml" href="{{ page.url | prepend: site.canonical_baseurl | prepend: site.url }}" />
 {% endif %}
+{% endraw  %}
 ```
 
 This lets the search engines know there is an equivalent AMP file to our full html page.
