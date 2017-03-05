@@ -372,10 +372,10 @@ Every time you want to build both sites just run the following from bash
 
 ```npm run build```
 
-Done!
+Done! Now you can prepend /amp/ to any post and you will get your AMP version.
 
 
 ## External resources
-[AMP Project Homepage](https://www.ampproject.org/)
-[AMP Serviceworker](https://www.ampproject.org/docs/reference/components/dynamic/amp-install-serviceworker)
-[AMP Analytics](https://www.ampproject.org/docs/reference/components/ads/amp-analytics)
+* [AMP Project Homepage](https://www.ampproject.org/)
+* [AMP Serviceworker](https://www.ampproject.org/docs/reference/components/dynamic/amp-install-serviceworker)
+* [AMP Analytics](https://www.ampproject.org/docs/reference/components/ads/amp-analytics)
