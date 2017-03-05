@@ -1,16 +1,15 @@
 ---
 layout: post
 title:  "Setting up Jekyll for AMP"
-date:   2017-03-05 09:00:00 +0000
+date:   2017-03-05 15:00:00 +0000
 categories: ideas
 author: "John Nolan"
 publisher: "John Nolan"
 ---
 
-In the following article I will be taking you through how I enabled AMP pages for my Jekyll blog. I will be talking
-about the following
+In the following article I will be taking you through how I enabled AMP pages for my Jekyll blog.
 
-* How I have structured my project to share the same content with different layouts
+* Jekyll project structure
 * Configuring the layouts
 * Adding a Service Worker to an AMP Page
 * Adding Google Analytics
@@ -18,13 +17,13 @@ about the following
 * How to build both sites in one command and include it in your CI build
 
 As always you can find an example of all of this to reference on my
- [repo on Github](https://github.com/johnnolan/blog)
+ [repo at Github](https://github.com/johnnolan/blog)
 
-For an introduction and guide to AMP you can go to the official site
+For an introduction and guide to AMP, you can go to the official site
 here [https://www.ampproject.org/](https://www.ampproject.org/) which
 is an excellent source for getting started.
 
-## Project Structure
+## Jekyll project structure
 
 If you take a look [here](https://github.com/johnnolan/blog) at my Github
 repository you can see the following new folder
@@ -33,16 +32,16 @@ repository you can see the following new folder
  [_config-amp.yml](https://github.com/johnnolan/blog/blob/master/_config-amp.yml).
 
 In the _layouts-amp folder we have a copy of the _layouts folder. This
-will be used to the necessary html layout changes needed.
+will be used for the necessary html layout changes needed.
 
 The new _config-amp.yml is a copy of our _config.yml and we will be
 adding some additional settings to it so we can specify new defaults for
 it to use.
 
 This means we will have to run to separate processes to produce 2 versions
-of the site but don't worry I will cover how we can make this simple later.
+of the site but don't worry I will cover how we can make this simpler later.
 
-In our _config-amp.yml add to the bottom the following settings.
+In your _config-amp.yml add to the bottom the following settings.
 
 ```
 destination:   _site/amp
@@ -74,7 +73,7 @@ templates.
 ## Configuring the layouts
 
 AMP requires us to strip the majority of things we have come to take
-as standard and markup our content in a certain way so that it can
+as standard, and markup our content in a certain way so that it can
 be easily processed. This means we need to make the following changes
 
 In our default.html change it to
@@ -287,17 +286,54 @@ site in our /amp sub folder.
 
 ## Adding Service Worker functionality
 
+Because we are restricted by including external javascript and CSS in AMP, we have to use their built in libraries
+to get access to functionality such as Service Workers. Above you can see we have included the script
+
+``` <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>```
+
+and then to enable our service worker we use this tag.
+
+```<amp-install-serviceworker src="/sw.js" data-iframe-src="https://www.nolanscafe.co.uk" layout="nodisplay"></amp-install-serviceworker>```
 
 ## Adding Google Analytics
 
+Just like the service worker, for analytics there is an AMP library we can call upon to pass parameters through. The script
+to link to is
+
+```<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>```
+
+and then for Google Analytics we can do this in our footer
+
+```
+<amp-analytics type="googleanalytics">
+  <script type="application/json">
+    {
+      "vars": {
+        "account": "UA-92772847-1"
+      },
+      "triggers": {
+        "trackPageview": {
+          "on": "visible",
+          "request": "pageview"
+        }
+      }
+    }
+  </script>
+
+</amp-analytics>
+```
+
+Notice that in the type attribute I have specified googleanalytics. This can be changed to your preferred anaylytics
+provider. See the links at the end of tHe document for more advanced usages. Just replace my account ID with your own.
 
 ## Setting up canonical and amphtml meta tags
 
 ```{% raw  %}<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.canonical_baseurl | prepend: site.url }}" />{% endraw  %}```
+
 This line specifies the link back to our full html page. It is required to allow the user/browser easy access back
 to the full page.
 
-A bit of functionality we have configured yet is hte addition of the variable ```canonical_baseurl```. Open up your
+A bit of functionality we haven't configured yet is the addition of the variable ```canonical_baseurl```. Open up your
 _config.yml and add the following line in
 
 ```canonical_baseurl: "/amp"```
@@ -336,10 +372,6 @@ Every time you want to build both sites just run the following from bash
 ```npm run build```
 
 Done!
-
-
-## Final thoughts
-
 
 
 ## External resources
