@@ -6,7 +6,8 @@ date:   2017-03-03 20:00:38 +0000
 categories: ideas
 author: "John Nolan"
 publisher: "John Nolan"
-image: "/assets/posts/2017-03-04-publishing-jekyll-aws-s3-cloudfront.png"
+image: "/assets/posts/2017-03-04-publishing-jekyll-aws-s3-cloudfront.svg"
+ogimage: "/assets/posts/2017-03-04-publishing-jekyll-aws-s3-cloudfront.png"
 ---
 
 > This information is useful once you have signed up to

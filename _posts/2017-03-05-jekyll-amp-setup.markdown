@@ -5,7 +5,8 @@ date:   2017-03-05 15:00:00 +0000
 categories: ideas
 author: "John Nolan"
 publisher: "John Nolan"
-image: "/assets/posts/2017-03-05-jekyll-amp-setup.png"
+image: "/assets/posts/2017-03-05-jekyll-amp-setup.svg"
+ogimage: "/assets/posts/2017-03-05-jekyll-amp-setup.png"
 ---
 
 In the following article I will be taking you through how I enabled AMP pages for my Jekyll blog.
