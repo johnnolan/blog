@@ -6,6 +6,7 @@ date:   2017-03-03 20:00:38 +0000
 categories: ideas
 author: "John Nolan"
 publisher: "John Nolan"
+image: "/assets/posts/2017-03-04-publishing-jekyll-aws-s3-cloudfront.svg"
 ---
 
 > This information is useful once you have signed up to
@@ -14,7 +15,7 @@ publisher: "John Nolan"
  AWS S3 bucket and AWS Cloudfront distribution setup. I will be covering
  this soon.
 
-At any time you can look at my [repo on github](https://github.com/johnnolan/blog) to see how I have set this
+At any time you can look at my [repo on Github](https://github.com/johnnolan/blog) to see how I have set this
 up.
 
 First create a new directory called *script* in your root folder and
@@ -63,7 +64,7 @@ branches:
 ```
 
 This is our deployment file. This tells Travis what we want to do once
-it has hold of our files from Git.
+it has hold of our files from Github.
 
 * ```language: ruby``` tells it the environment we want to use to run our
 build (Ruby)
@@ -74,7 +75,7 @@ run
 * ```branches``` tells Travis to... only build our master
 branch
 
-Now, before we commit and push to git we need to setup credentials for
+Now, before we commit and push to Github we need to setup credentials for
 ```awscli```, to allow it to connect to our account.
 
 Log into [https://travis-ci.org](https://travis-ci.org) and find your
@@ -99,7 +100,7 @@ your Travis build script and are all encrypted.
 *Never put sensitive information in your Github Repo*
 
 You should now be all setup ready for continuous integration. Commit and
-Push these changes to Git and now Travis should receive the trigger
+Push these changes to Github and now Travis should receive the trigger
 and use the ```.travis.yml``` file and ```cibuild``` to execute your
 Jekyll and AWS S3 and Cloudfront deployment.
 
