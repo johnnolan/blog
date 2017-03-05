@@ -4,6 +4,8 @@ title:  "Publishing your Jekyll blog to AWS S3 and Cloudfront
 invalidation using Travis CI"
 date:   2017-03-03 20:00:38 +0000
 categories: ideas
+author: "John Nolan"
+publisher: "John Nolan"
 ---
 
 > This information is useful once you have signed up to
