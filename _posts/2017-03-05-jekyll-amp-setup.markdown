@@ -257,9 +257,11 @@ amp-footer.html
 </amp-analytics>
 ```
 
-# TODO: Explain the file contents
+The only changes on here are the addition of the amp-analytics and
+amp-serviceworker tags. I will explain these below.
 
-
+So now if we run the build command again we should have a new amp compatible
+site in our /amp sub folder.
 
 
 ## Adding Service Worker functionality
@@ -272,6 +274,7 @@ amp-footer.html
 
 
 ## How to build both sites and include it in your CI build
+
 
 
 ## Final thoughts
