@@ -56,6 +56,12 @@ defaults:
       layout: "default"
 ```
 
+and change your baseurl to
+
+```
+baseurl: "/amp"
+```
+
 Now go to your command line and run the following command
 
 ```jekyll build --config _config-amp.yml```
@@ -197,7 +203,14 @@ amp-head.html
 </head>
 ```
 
-# TODO: Explain the file contents
+With AMP you should include all your CSS inline. It also needs to be as small as possible and be wrapped in a new special
+tag called ```<style amp-custom>```. I have deliberately only included the absolute basic CSS to keep it functional.
+
+This tag is a direct relation to this JS include file ```https://cdn.ampproject.org/v0.js```. This contains the definitions
+for the new tags that you are able to wrap common functionality into.
+
+This also allows us to use the ```<style amp-boilerplate>``` which from what I can tell is a required set of styles
+to allow AMP sites to work.
 
 
 amp-footer.html
@@ -271,6 +284,33 @@ site in our /amp sub folder.
 
 
 ## Setting up canonical and amphtml meta tags
+
+```<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.canonical_baseurl | prepend: site.url }}" />```
+This line specifies the link back to our full html page. It is required to allow the user/browser easy access back
+to the full page.
+
+A bit of functionality we have configured yet is hte addition of the variable ```canonical_baseurl```. Open up your
+_config.yml and add the following line in
+
+```canonical_baseurl: "/amp"```
+
+And in your _config-amp.yml add the following line
+
+```canonical_baseurl: ""```
+
+Now in your head.html add the following code
+
+```
+{% if page.url == '/amp/' %}}
+<link rel="amphtml" href="{{ page.url | prepend: site.canonical_baseurl | prepend: site.url | append: 'index.html' }}" />
+{% else %}
+<link rel="amphtml" href="{{ page.url | prepend: site.canonical_baseurl | prepend: site.url }}" />
+{% endif %}
+```
+
+This lets the search engines know there is an equivalent AMP file to our full html page.
+
+All this can be seen in my Github repository.
 
 
 ## How to build both sites and include it in your CI build
