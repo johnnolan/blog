@@ -339,3 +339,8 @@ Done!
 
 
 ## Final thoughts
+
+
+
+## External resources
+[https://www.ampproject.org/](https://www.ampproject.org/)
