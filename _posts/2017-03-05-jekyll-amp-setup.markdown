@@ -279,7 +279,7 @@ amp-footer.html
 ```
 
 The only changes on here are the addition of the amp-analytics and
-amp-serviceworker tags. I will explain these below.
+amp-install-serviceworker tags. I will explain these below.
 
 So now if we run the build command again we should have a new amp compatible
 site in our /amp sub folder.
@@ -343,4 +343,6 @@ Done!
 
 
 ## External resources
-[https://www.ampproject.org/](https://www.ampproject.org/)
+[AMP Project Homepage](https://www.ampproject.org/)
+[AMP Serviceworker](https://www.ampproject.org/docs/reference/components/dynamic/amp-install-serviceworker)
+[AMP Analytics](https://www.ampproject.org/docs/reference/components/ads/amp-analytics)
