@@ -325,6 +325,17 @@ All this can be seen in my Github repository.
 
 ## How to build both sites and include it in your CI build
 
+In your package.json add the following line under scripts
+
+```"build": "jekyll build && jekyll build --config _config-amp.yml"```
+
+Now in your build script change your ```jekyll build``` to ```npm run build```
+
+Every time you want to build both sites just run the following from bash
+
+```npm run build```
+
+Done!
 
 
 ## Final thoughts
