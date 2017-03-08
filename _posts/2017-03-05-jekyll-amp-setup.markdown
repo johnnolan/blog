@@ -5,7 +5,7 @@ date:   2017-03-05 15:00:00 +0000
 categories: ideas
 author: "John Nolan"
 publisher: "John Nolan"
-image: "/assets/posts/2017-03-05-jekyll-amp-setup.svg"
+image: "/assets/posts/2017-03-05-jekyll-amp-setup.jpg"
 imagewidth: "200"
 imageheight: "69"
 ogimage: "/assets/posts/2017-03-05-jekyll-amp-setup.jpg"
