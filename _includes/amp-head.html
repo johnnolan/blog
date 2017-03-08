@@ -20,7 +20,7 @@
       {
         "@context": "http://schema.org",
         "@type": "blogPost",
-        "headline": {% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %},
+        "headline": "{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}",
         "datePublished": {{ page.date }},
         "image": [
           "/android-chrome-512x512.png"

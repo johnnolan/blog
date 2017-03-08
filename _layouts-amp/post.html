@@ -14,5 +14,8 @@ layout: default
   <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
+	<div class="post-content">
+		{% if page.publisher %} • <span itemprop="publisher" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.publisher }}</span></span>{% endif %}
+	</div>
 
 </article>
