@@ -20,20 +20,10 @@ walker.on('end', function() {
                 throw err;
             }
 
-        amphtmlValidator.getInstance().then(function (validator) {
-            var result = validator.validateString( data.toString());
-            if (result.status === 'PASS') {
-                for (var ii = 0; ii < results.errors.length; ii++) {
-                    var error = results.errors[ii];
-                    var msg = 'line ' + error.line + ', col ' + error.col + ': ' + error.message;
-                    if (error.specUrl !== null) {
-                        msg += ' (see ' + error.specUrl + ')';
-                    }
-                    console.log(msg);
-                }
-            }
-            else
-                {
+            amphtmlValidator.getInstance().then(function (validator) {
+                var validationResult = validator.validateString( data.toString());
+                console.log(validationResult.status + ": " + result);
+                if (validationResult.status !== 'PASS') {
                     process.exit(1);
                 }
             });
