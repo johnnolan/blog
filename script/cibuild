@@ -1,3 +1,4 @@
+npm install
 npm run build
 npm run amp-validate
 pip install awscli
