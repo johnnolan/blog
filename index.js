@@ -29,7 +29,7 @@ walker.on('end', function() {
                     if (error.specUrl !== null) {
                         msg += ' (see ' + error.specUrl + ')';
                     }
-
+                    console.log(msg);
                 }
             }
             else
