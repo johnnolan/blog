@@ -6,6 +6,8 @@ categories: ideas
 author: "John Nolan"
 publisher: "John Nolan"
 image: "/assets/posts/2017-03-05-jekyll-amp-setup.svg"
+imagewidth: "200"
+imageheight: "69"
 ogimage: "/assets/posts/2017-03-05-jekyll-amp-setup.jpg"
 ---
 

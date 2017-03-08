@@ -6,6 +6,8 @@ categories: ideas
 author: "John Nolan"
 publisher: "John Nolan"
 image: "/assets/posts/2017-02-27-what-is-to-come.jpg"
+imagewidth: "200"
+imageheight: "200"
 ogimage: "/assets/posts/2017-02-27-what-is-to-come.jpg"
 ---
 

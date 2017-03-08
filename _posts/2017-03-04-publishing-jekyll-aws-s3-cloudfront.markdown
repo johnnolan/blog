@@ -7,6 +7,8 @@ categories: ideas
 author: "John Nolan"
 publisher: "John Nolan"
 image: "/assets/posts/2017-03-04-publishing-jekyll-aws-s3-cloudfront.svg"
+imagewidth: "200"
+imageheight: "200"
 ogimage: "/assets/posts/2017-03-04-publishing-jekyll-aws-s3-cloudfront.jpg"
 ---
 
