@@ -1,4 +1,5 @@
 npm install
+npm bump.js
 npm run build
 npm run amp-validate
 pip install awscli

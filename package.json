@@ -6,7 +6,8 @@
   "scripts": {
     "build": "jekyll build && jekyll build --config _config-amp.yml",
     "build:local": "jekyll build && jekyll build --config _config-amp.yml && node index.js",
-    "amp-validate": "node index.js"
+    "amp-validate": "node index.js",
+    "bump": "node bump.js"
   },
   "repository": {
     "type": "git",
