@@ -19,7 +19,7 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
 
-  {% if page.url == '/amp/' %}}
+  {% if page.url == '/' %}
     <link rel="amphtml" href="{{ page.url | prepend: site.canonical_baseurl | prepend: site.url | append: 'index.html' }}" />
   {% else %}
     <link rel="amphtml" href="{{ page.url | prepend: site.canonical_baseurl | prepend: site.url }}" />
