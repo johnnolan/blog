@@ -1,14 +1,14 @@
 ---
 layout: post
 title:  "Creating a Google Chrome Extension Tab"
-date:   2017-03-18 20:00:38 +0000
+date:   2017-03-16 20:00:38 +0000
 categories: ideas
 author: "John Nolan"
 publisher: "John Nolan"
-image: "/assets/posts/2017-03-18-chrome-extension-leadership-quotes.jpg"
+image: "/assets/posts/2017-03-16-chrome-extension-leadership-quotes.jpg"
 imagewidth: "200"
 imageheight: "200"
-ogimage: "/assets/posts/2017-03-18-chrome-extension-leadership-quotes.jpg"
+ogimage: "/assets/posts/2017-03-16-chrome-extension-leadership-quotes.jpg"
 ---
 
 > A little writeup on some fun I had creating a Google Chrome
