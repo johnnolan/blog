@@ -127,9 +127,6 @@ proven by the interview process and homework you need to do. In the
 Tech Team, they have high standards and wouldn't have given you the
 job unless you proved you can do it.
 
-* You work in a non-agile environment with constant chaos in shifting
- priorities and still manage to get tickets out to a high standard.
-
 * Do you turn up every day and try your best even though you think you
  aren't worthy? Yes, you do, and that is all anyone could ever ask of
   you. That is enough for any employer.
