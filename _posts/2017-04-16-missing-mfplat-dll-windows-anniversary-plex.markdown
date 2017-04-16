@@ -7,7 +7,7 @@ author: "John Nolan"
 publisher: "John Nolan"
 image: "/assets/posts/2017-04-16-missing-mfplat-dll-windows-anniversary-plex.jpg"
 imagewidth: "200"
-imageheight: "225"
+imageheight: "113"
 ogimage: "/assets/posts/2017-04-16-missing-mfplat-dll-windows-anniversary-plex.jpg"
 ---
 
