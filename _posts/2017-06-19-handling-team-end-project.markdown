@@ -6,16 +6,26 @@ categories: ideas
 author: "John Nolan"
 publisher: "John Nolan"
 image: "/assets/posts/2017-06-19-handling-team-end-project.jpg"
-imagewidth: "200"
-imageheight: "113"
+imagewidth: "600"
+imageheight: "383"
 ogimage: "/assets/posts/2017-06-19-handling-team-end-project.jpg"
 ---
+
+I am currently getting to the end of a 9 month project and to relieve
+my mind, I started writing down all the things I needed to keep doing
+and put in words what it meant. The below is a mind dump of some of the
+key things I have been doing and that I believe strongly in.
+
+I love my team (and now my extended team) and am so proud of everything they
+have accomplished during this project. I hope the below can help other
+leaders who are looking for ways to feel more connecting with their
+colleagues as the pressure mounts.
 
 ## Get closer to your teams
 Now is the time to start connecting with your team more than ever. Take breaks together and let them get stresses off
 their chest. Listen closely and try and solve those problems for our them.
 
-The less stress on their shoulders the easier it is to keep calm and focused.
+> The less stress on their shoulders the easier it is to keep calm and focused.
 
 ## Do a reset on what is left
 One of my favourite things is doing a reset of work. Forgetting everything done so far and going through only what is
@@ -25,7 +35,7 @@ It is a small psychological boost but works really well to give people the energ
 Roll your sleeves up and get stuck in
 If like me you are lucky enough to have a development background then pair with people where it's needed.
 
-This doesn't mean micromanaging and you must not make them feel like they are underachieving.
+> This doesn't mean micromanaging and you must not make them feel like they are underachieving.
 
 Make yourself available and go around every person asking if there is anything you can help with. Any negative
 reaction pats them on the back and moves on letting them know to shout if they want to work together.
@@ -61,6 +71,7 @@ sell it. Maybe this is a British thing but taking quotes seriously doesn't work 
 Make cheesy inspiration possible by making fun of it and repeating it throughout the day when things get too much.
 
 > Center yourself
+
 If it gets too much for you, step out, go for a walk and clear your mind. Refocus and come back into the room.
 
 Remain calm as much as you can. You need to lead by example. Be the rock everyone needs to bounce things off to get
@@ -75,6 +86,7 @@ As you are going through, when someone or something people solve a problem, cele
 beer, a quick nip out to get doughnuts or coffee. It can be anything, just make sure to savour even the smallest wins.
 
 > Stay positive
+
 At the end, the last thing people need is negatively or criticism. If you must do it then write it down and talk about
 it as a group in a retrospective. Now is not the time.
 
