@@ -5,10 +5,10 @@ date:   2017-06-19 09:00:00 +0000
 categories: ideas
 author: "John Nolan"
 publisher: "John Nolan"
-image: "/assets/posts/2017-06-19-handling-team-end-project.jpg"
-imagewidth: "600"
-imageheight: "383"
-ogimage: "/assets/posts/2017-06-19-handling-team-end-project.jpg"
+image: "/assets/posts/2017-06-19-handling-team-end-project-2.jpg"
+imagewidth: "400"
+imageheight: "419"
+ogimage: "/assets/posts/2017-06-19-handling-team-end-project-2.jpg"
 ---
 
 I am currently getting to the end of a 9 month project and to relieve
