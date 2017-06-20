@@ -12,7 +12,7 @@ ogimage: "/assets/posts/2017-06-19-handling-team-end-project-2.jpg"
 ---
 
 I am currently getting to the end of a 9 month project and to relieve
-my mind, I started writing down all the things I needed to keep doing
+ my mind, I started writing down all the things I needed to keep doing
 and put in words what it meant. The below is a mind dump of some of the
 key things I have been doing and that I believe strongly in.
 
