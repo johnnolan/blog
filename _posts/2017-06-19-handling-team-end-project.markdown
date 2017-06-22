@@ -83,11 +83,18 @@ Remain calm as much as you can. You need to lead by example. Be the rock everyon
 stuff done.
 
 ## Lean on your team as much as they lean on you
-Don't isolate yourself. More than anything you need to keep positive, spew rainbows and keep your energy levels up.
+Don't isolate yourself. More than anything you need to keep positive,
+spew rainbows and keep your energy levels up.
 As soon as they see you start to give up, that will affect all others around you.
 
+You are part of a team, you are not there to do everything yourself and look down on others,
+ thinking you are better than them. You are one of them, it is just a title in your
+  job description. Others know things you don't know and asking questions doesn't make
+  you look stupid, it is humbling and makes sure you are an equal, which is exactly
+  what you should be.
+
 ## Celebrate every win
-As you are going through, when someone or something people solve a problem, celebrate it. It can be high fives, hugs,
+When someone or group of people solves a problem, celebrate it. It can be high fives, hugs,
 beer, a quick nip out to get doughnuts or coffee. It can be anything, just make sure to savour even the smallest wins.
 
 > Stay positive
