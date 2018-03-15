@@ -11,7 +11,7 @@ published: true
 	    <meta itemprop="width" content="{{page.imagewidth}}"/>
 	    <meta itemprop="height" content="{{page.imageheight}}"/>
 	    <meta itemprop="url" content="{{ page.image | prepend: site.url }}" />
-	    <img width="{{page.imagewidth}}" height="{{page.imageheight}}" itemprop="image thumbnailUrl" alt="{{ page.title }}" class="post" src="{{ page.image | prepend: site.url }}">
+	    <img itemprop="image thumbnailUrl" alt="{{ page.title }}" class="post" src="{{ page.image | prepend: site.url }}">
     </div>
   </header>
 
