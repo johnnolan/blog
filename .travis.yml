@@ -1,8 +1,10 @@
 language: ruby
 dist: trusty
 sudo: required
+python:
+  - 3.4
 rvm:
-- 2.5
+  - 2.5
 jdk:
   - openjdk7
 before_script:
