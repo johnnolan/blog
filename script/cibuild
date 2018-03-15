@@ -2,7 +2,7 @@ npm install
 npm bump.js
 npm run build
 npm run amp-validate
-pip install awscli
+sudo -H pip install awscli --upgrade --ignore-installed six
 aws s3 sync --acl public-read --sse --delete _site s3://www.nolanscafe.co.uk
 aws configure set preview.cloudfront true
 aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths '/*'
