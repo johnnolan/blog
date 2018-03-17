@@ -7,18 +7,12 @@ self.addEventListener('install', e => {
 	e.waitUntil(
 	caches.open('johnnolan-blog-' + ver).then(cache => {
 		return cache.addAll([
-			{% for page in site.html_pages %}
-			'{{ page.url }}',
-			{% endfor %}
-			{% for post in site.posts %}
-			'{{ post.url }}',
-			{% endfor %}
-
-			{% for post in site.posts %}
-			'{{ post.url | prepend: site.canonical_baseurl }}',
-			{% endfor %}
-
-			'/amp/index.html'
+            '/apple-touch-icon.png',
+            '/favicon-32x32.png',
+            '/favicon-16x16.png',
+            '/safari-pinned-tab.svg',
+            '/assets/me.jpg',
+            '/assets/twitter.svg'
 		])
 			.then(() => self.skipWaiting());
 })

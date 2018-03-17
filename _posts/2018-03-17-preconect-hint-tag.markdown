@@ -13,20 +13,23 @@ ogimage: "/assets/posts/2018-03-17-preconnect-hint-tag.jpg"
 
 Recently I have added in (and well overdue) the `preconnect` meta tag.
 
-Preconnect is a resource hint tag you can add to your markup, in the `<head>` that will tell the browser, ahead of render, that your markup will be making a request to a resource on an external domain, later in your markup.
+Preconnect is a resource hint tag you can add to your markup in the `<head>`. It will tell the browser,
+that your markup will be making a request to a resource on an external domain, later int the document.
 
 The tag looks like this
+
 ```
 <link rel="preconnect" href="//example.com">
 ```
 
-Once defined this will initiate the blow including SSL handshakes
+Once defined this will initiate the below, including SSL handshakes
 
 * DNS Lookup
 * TCP Handshake
 * TLS negotiation
 
-This will save you time later on down the request chain when the browser sees these resources and starts to decide how to handle them.
+This will save you time later on down the request chain when the browser sees these resources and starts
+to decide how to handle them.
 
 Below is an example of results using Google Chrome Dev Tools at `Fast 3G` and `Online` options.
 
@@ -40,11 +43,10 @@ Red is before and Blue is after.
 
 <img src="/assets/posts/2018-03-17-preconnect-hint-tag.jpg" alt="preconnect tag Chrome Dev Tools Results" />
 
-> On mobile connections and a 6x slowdown on processor speed, that has a reducing on 2-6 seconds page load speed!
+> On mobile connections and a 6x slowdown on processor speed, it has a reduction of 2-6 seconds on page load speed!
 
-Unfortunately, I didn't get a before for the Online test, but you can imagine the gain.
-
-The mobile performance fight is what I am concentrating on day to day at the moment.
+Unfortunately, I didn't get a before for the Online test, but you can imagine the gain. The mobile performance
+fight is what I am concentrating on day to day at the moment, anyway.
 
 This gives us another great tool in our arsenal.
 

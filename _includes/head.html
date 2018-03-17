@@ -30,7 +30,7 @@
     <link rel="amphtml" href="{{ page.url | prepend: site.canonical_baseurl | prepend: site.url }}" />
   {% endif %}
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title | append: ' | ' | append: site.title | escape }}{% else %}{{ site.title | append: ' | ' | append: site.description | escape }}{% endif %}</title>
 
   {% capture styles %}
   {% include main.scss %}
