@@ -31,7 +31,7 @@ Once defined this will initiate the below, including SSL handshakes
 This will save you time later on down the request chain when the browser sees these resources and starts
 to decide how to handle them.
 
-Below is an example of results using Google Chrome Dev Tools at `Fast 3G` and `Online` options.
+The image above is an example of results using Google Chrome Dev Tools at `Fast 3G` and `Online` options.
 
 * Fast 3g _with_ preconnect
 * Fast 3g _without_ preconnect
@@ -40,8 +40,6 @@ Below is an example of results using Google Chrome Dev Tools at `Fast 3G` and `O
 * Fast 3g _with_ preconnect
 
 Red is before and Blue is after.
-
-<img src="/assets/posts/2018-03-17-preconnect-hint-tag.jpg" alt="preconnect tag Chrome Dev Tools Results" />
 
 > On mobile connections and a 6x slowdown on processor speed, it has a reduction of 2-6 seconds on page load speed!
 
