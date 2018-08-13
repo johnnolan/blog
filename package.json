@@ -8,7 +8,7 @@
     "build:local": "jekyll build && jekyll build --config _config-amp.yml && node index.js",
     "amp-validate": "node index.js",
     "bump": "node bump.js",
-    "preview": "jekyll serve"
+    "preview": "jekyll serve  --config _config-amp.yml"
   },
   "repository": {
     "type": "git",
