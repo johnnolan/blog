@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-version: 1525291921389
+version: 1534176654523
 title:  Front End Development and Leadership/Coaching
 email: johnnolan@nolanscafe.co.uk
 description: > # this means to ignore newlines until "baseurl:"
