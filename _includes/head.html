@@ -53,7 +53,7 @@
           window.onerror = function (err, url, line)
           {
               gtag('event', 'exception', {
-                  'exDescription': line + ': ' + err
+                  'description': line + ': ' + err
               });
           };
       }
@@ -64,6 +64,12 @@
           firstInputDelay: true,
           timeToInteractive: true,
           logging: false,
+          anaylticsTracker: function(metricName, duration) {
+              gtag('event', 'performance', {
+                  'name': metricName,
+                  'value': duration
+              });
+          },
           googleAnalytics: {
               enable: true,
               timingVar: "performance"
