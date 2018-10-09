@@ -43,16 +43,16 @@
   <script src="/assets/perfume.js"></script>
   <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      window.gtag = function(){dataLayer.push(arguments);}
+      window.gtag('js', new Date());
 
-      gtag('config', 'UA-92772847-1');
+      window.gtag('config', 'UA-92772847-1');
 
       if (typeof window.onerror === "object")
       {
           window.onerror = function (err, url, line)
           {
-              gtag('event', 'exception', {
+              window.gtag('event', 'exception', {
                   'description': line + ': ' + err
               });
           };
@@ -63,16 +63,13 @@
           firstContentfulPaint: true,
           firstInputDelay: true,
           timeToInteractive: true,
-          logging: false,
-          anaylticsTracker: function(metricName, duration) {
-              gtag('event', 'performance', {
+          logging: true,
+          analyticsTracker: function(metricName, duration) {
+              window.gtag('event', 'timing_complete', {
                   'name': metricName,
-                  'value': duration
+                  'value': duration,
+                  'event_category': 'perfume'
               });
-          },
-          googleAnalytics: {
-              enable: true,
-              timingVar: "performance"
           }
       })
   </script>
