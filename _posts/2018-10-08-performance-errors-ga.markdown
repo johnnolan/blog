@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  "Performance Tracking and Error Tracking in Google Analytics and Data Studio"
+title:  "Performance Tracking and Error Tracking in Google Analytics with Data Studio"
 date:   2018-10-08 09:00:00 +0000
 categories: ideas
 author: "John Nolan"
 publisher: "John Nolan"
-image: "/assets/posts/2018-10-07-debugging-javascript.png"
-imagewidth: "100"
-imageheight: "100"
-ogimage: "/assets/posts/2018-10-07-debugging-javascript.png"
+image: "/assets/posts/2018-10-08-performance-errors-ga.png"
+imagewidth: "250"
+imageheight: "250"
+ogimage: "/assets/posts/2018-10-08-performance-errors-ga.png"
 ---
 
 So you want to track your performance and error tracking on your website? If you have Google Analytics installed
@@ -45,7 +45,7 @@ if (typeof window.onerror === "object")
 
 For tracking performance I am using the incredibly awesome [Perfume.js](http://zizzamia.github.io/perfume/). Check out their site
 for a breakdown on everything it can do. This includes polyfills for older browsers and gives us a great
-starting point to start measuring mertics.
+starting point to start measuring metrics.
 
 The setup is very straight forward and once you include their script you can start tracking with the code below.
 
@@ -66,6 +66,27 @@ var perfume = new Perfume({
         timingVar: "performance"
     }
 })
+```
+
+
+*Note:* If you are using the more modern gtag installation of Google Analytics to track your user timings then the following
+code will work instead.
+
+```
+ var perfume = new Perfume({
+    firstPaint: true,
+    firstContentfulPaint: true,
+    firstInputDelay: true,
+    timeToInteractive: true,
+    logging: true,
+    analyticsTracker: function(metricName, duration) {
+        gtag('event', 'timing_complete', {
+            'name': metricName,
+            'value': duration,
+            'event_category': 'perfume'
+            });
+        }
+    })
 ```
 
 ## Producing a Dashboard
