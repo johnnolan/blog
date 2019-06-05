@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to test a React Higher Order Component using react-testing-library and Jest"
-date:   2019-01-15 09:00:00 +0000
+date:   2019-06-05 09:00:00 +0000
 categories: ideas
 author: "John Nolan"
 publisher: "John Nolan"
