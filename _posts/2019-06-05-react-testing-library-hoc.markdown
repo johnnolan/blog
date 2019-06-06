@@ -28,19 +28,21 @@ Using the `render` method directly passing this in won't work. We have to instea
 On *line 22* we create a, what I have called, Mock App with some basic html in it.
 
 ```
-const MockApp = () => {
+class MockApp extends React.Component {
+  render () {
     return (
-        <p>
-            Hello from your Mock App
-        </p>  
+      <p>
+        Hello from your Mock App
+      </p>
     )
+  }
 }
 ```
 
 We will use this to be able to wrap our Higher Order Component around it. We do this on *line 30*.
 
 ```
-const MockWithHOC = withHOC(<MockApp />)
+const MockWithHOC = withHOC(MockApp)
 ```
 
 This will now return us a React component we can pass into render.
