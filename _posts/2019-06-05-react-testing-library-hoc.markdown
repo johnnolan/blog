@@ -11,7 +11,7 @@ imageheight: "250"
 ogimage: "/assets/posts/2019-01-13-react.png"
 ---
 
-Recenlty I have had to test a React Higher Order Component using the fabulous [react-testing-library](https://github.com/testing-library/react-testing-library) but struggled to find how you can achieve this.
+Recently I have had to test a React Higher Order Component using the fabulous [react-testing-library](https://github.com/testing-library/react-testing-library) but struggled to find how you can achieve this.
 
 Before I go any further into detail, below is some example code I have done so you can get straight to copy and pasting. For more information see below the code sample.
 
@@ -29,4 +29,4 @@ On *line 22* we create a, what I have called, Mock App with some basic html in i
 
 This will now return us a React component we can pass into render.
 
-And thats it, we can now start to use this as if it were any other component, plus test that the `WrappedComponent` renders correctly.
+And that's it, we can now start to use this as if it were any other component, plus test that the `WrappedComponent` renders correctly.
