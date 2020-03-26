@@ -1,7 +1,7 @@
 // Our variables
 $base-font-family: Arial, Helvetica, sans-serif;
 $base-font-family-header: Arial, Helvetica, sans-serif;
-$base-font-size:   16px;
+$base-font-size:   25px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.3;
@@ -14,9 +14,9 @@ $brand-color:      #111;
 $brand-color-2:    #1E2512;
 $brand-color-3:    #ffffff;
 
-$grey-color:       lighten(#111111, 40%);
+$grey-color:       lighten(#111111, 20%);
 $grey-color-light: lighten($grey-color, 10%);
-$grey-color-lighter: lighten($grey-color, 40%);
+$grey-color-lighter: lighten($grey-color, 20%);
 $grey-color-dark:  darken($grey-color, 25%);
 
 $border-radius: 18px;
